@@ -1,0 +1,67 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.images {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.panel {
+  position: absolute;
+  display: none;
+}
+
+.panel:target {
+  display: block;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs > li {
+  display: inline-block;
+  padding: .53em .75em;
+  position: relative;
+}
+
+.tabs a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  border: solid #626262;
+  border-radius: 8px;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  bottom: -340px;
+  left: 200px;
+
+}
+
+a:hover {
+  background-color: #626262;
+}
+
